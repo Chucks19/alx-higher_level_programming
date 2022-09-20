@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../printsd"
+		},
+		{
+			"path": "../../printf"
+		},
+		{
+			"path": "../../Documents/ALX"
+		},
+		{
+			"path": "../../alx-low_level_programming"
+		},
+		{
+			"path": "../../simple_shell"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
