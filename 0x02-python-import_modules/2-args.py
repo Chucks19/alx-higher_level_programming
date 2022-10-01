@@ -11,6 +11,6 @@ if __name__ == "__main__":
         print("{} arguments:".format(i))
 
     if i >= 1:
-        while(sys.args)
+        while(sys.argv)
         for a in range(i):
             print("{}: {}".format(a + 1, sys.argv[a + 1]))
