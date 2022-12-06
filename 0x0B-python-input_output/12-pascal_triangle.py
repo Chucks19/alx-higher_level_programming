@@ -1,19 +1,32 @@
 #!/usr/bin/python3
-"""This module defines a Pascal's Triangle function"""
+'''task 12 module'''
 
 
 def pascal_triangle(n):
-    """Represents Pascal's Triangle of size n
-    """
+    '''returns a list of lists of integers representing
+    the Pascal’s triangle of n
+    '''
     if n <= 0:
-        return []
+        return list()
 
-    triangles = [[1]]
-    while len(triangles) != n:
-        tri = triangles[-1]
-        tmp = [1]
-        for i in range(len(tri) - 1):
-            tmp.append(tri[i] + tri[i + 1])
-        tmp.append(1)
-        triangles.append(tmp)
-    return triangles
+    tr = []
+    for line in range(0, n):
+        # Every line has number of
+        # integers equal to line
+        # number
+        tmp = []
+        for i in range(0, line + 1):
+            tmp.append(magic(line, i))
+        tr.append(tmp)
+    return tr
+
+
+def magic(n, k):
+    '''magic function that does some magic'''
+    res = 1
+    if (k > n - k):
+        k = n - k
+    for i in range(0, k):
+        res = res * (n - i)
+        res = res // (i + 1)
+    return res
