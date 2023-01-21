@@ -11,7 +11,7 @@ if __name__ == "__main__":
     url = sys.argv[1]
     value = {"email": "sys.argv[2]"}
     """ encoding the data fromdictionary to byte object"""
-    encoding_value = urllib.parse.urlencoding(value)
+    encoding_value = urllib.parse.urlencode(value)
     """convert to byte"""
     value_coded = encoding_value.encode("ascii")
 
